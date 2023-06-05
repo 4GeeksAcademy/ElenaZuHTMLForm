@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
+ 
+
+
     <div class="container-fluid">
         <form>
           <div class="card text-center mt-5 me-5 ms-5">
@@ -16,12 +20,112 @@
               <h3 class="text-start">Payment form example</h3>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+
+              <div class="alert alert-danger text-start" role="alert">
+                Some fields are missing 
+              </div>
+              <div class="row">
+                <div class="col-auto flex-fill text-start">
+                  <label for="inputCard" class="form-label">Card #</label>
+                  <input type="text" id="inputCard" class="form-control" aria-describedby="inputCard" placeholder="XXXXXXXXXXXX">
+                </div>
+                <div class="col-auto flex-fill text-start">
+                  <label for="inputCard" class="form-label">CVC #</label>
+                  <input type="text" id="inputCard" class="form-control" aria-describedby="inputCard" placeholder="000">
+                </div>
+                <div class=" row col-auto flex-fill text-start">
+                  <div class="ps-5">
+                    <label for="inputCard" class="form-label">Amount</label>
+                  </div>
+                  <div class="col-auto">
+                    <label for="inputPassword6" class="col-form-label">$</label>
+                  </div>
+                  <div class="col-auto flex-fill">
+                    <input type="text" id="inputCard" class="form-control" aria-describedby="inputCard" placeholder="Amount">
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col-auto flex-fill text-start">
+                  <label for="" class="form-label">First Name</label>
+                  <input type="text" id="" class="form-control" aria-describedby="" placeholder="">
+                </div>
+                <div class="col-auto flex-fill text-start">
+                  <label for="" class="form-label">Last Name</label>
+                  <input type="text" id="" class="form-control" aria-describedby="" placeholder="">
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="flex-fill text-start city_width">
+                  <label for="" class="form-label">City</label>
+                  <input type="text" id="" class="form-control" aria-describedby="" placeholder="">
+
+                  <label for="" class="form-label col-md-12 some-padding">We accept:</label>
+                  <div class="rounded bg-secondary icons">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">
+                        <i class="fa-brands fa-cc-visa"></i>
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                      <label class="form-check-label" for="inlineRadio3">
+                        <i class="fa-brands fa-cc-discover"></i>
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="">
+                      <label class="form-check-label" for="inlineRadio3">
+                        <i class="fa-brands fa-cc-amex"></i>
+                      </label>
+                    </div>
+
+                  </div>
+
+
+                </div>
+                <div class="col-auto flex-fill text-start">
+                  <div class="row"> 
+
+                    <div class="col-auto flex-fill text-start some-padding">
+                      <select class="form-select" id="autoSizingSelect">
+                        <option selected>Pick a state</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="col-auto flex-fill text-start">
+                      <label for="" class="form-label">Postal Code</label>
+                      <input type="text" id="" class="form-control" aria-describedby="" placeholder="">
+                    </div>
+                    
+                  </div>
+                  <label for="floatingTextarea2" class="col-md-12 some-padding">Comments</label>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <div id="" class="form-text">Add any notes here.</div>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
             <div class="card-footer text-muted">
-              2 days ago
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                <button class="btn btn-primary" type="button">Send</button>
+              </div>
             </div>
           </div>
         </form>
